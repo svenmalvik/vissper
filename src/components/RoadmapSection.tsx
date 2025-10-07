@@ -44,10 +44,10 @@ const phases = [
 
 const RoadmapSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-32 bg-background relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             What's Next?
           </h2>
           <p className="text-xl text-muted-foreground">

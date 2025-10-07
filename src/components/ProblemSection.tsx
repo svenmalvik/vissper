@@ -21,10 +21,10 @@ const problems = [
 
 const ProblemSection = () => {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-32 bg-muted/30 relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             The Problem We're Solving
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -38,14 +38,14 @@ const ProblemSection = () => {
             return (
               <Card 
                 key={index} 
-                className="border-border shadow-card hover:shadow-soft transition-all hover:-translate-y-1 animate-fade-in-up bg-card"
+                className="border-border shadow-card hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up glass rounded-2xl group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader>
-                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                    <Icon className="h-7 w-7 text-primary" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-card">
+                    <Icon className="h-8 w-8 text-primary" strokeWidth={2} />
                   </div>
-                  <CardTitle className="text-xl">{problem.title}</CardTitle>
+                  <CardTitle className="text-2xl mb-3">{problem.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">

@@ -24,10 +24,10 @@ const useCases = [
 
 const UseCasesSection = () => {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-32 bg-muted/30 relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             Who Is This For?
           </h2>
           <p className="text-xl text-muted-foreground">
@@ -41,20 +41,20 @@ const UseCasesSection = () => {
             return (
               <Card 
                 key={index}
-                className="border-border shadow-card hover:shadow-soft transition-all hover:-translate-y-1 animate-fade-in-up bg-card"
+                className="border-border shadow-card hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up glass rounded-2xl group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader>
-                  <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-4">
-                    <Icon className="h-7 w-7 text-accent" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-card">
+                    <Icon className="h-8 w-8 text-accent" strokeWidth={2} />
                   </div>
-                  <CardTitle className="text-xl">{useCase.title}</CardTitle>
-                  <CardDescription className="text-base">
+                  <CardTitle className="text-2xl mb-3">{useCase.title}</CardTitle>
+                  <CardDescription className="text-base leading-relaxed">
                     {useCase.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-5 rounded-xl border-l-4 border-primary group-hover:border-accent transition-colors">
                     <p className="text-sm font-medium text-primary">
                       "{useCase.benefit}"
                     </p>
