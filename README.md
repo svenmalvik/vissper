@@ -1,8 +1,10 @@
-# Welcome to your Lovable project
+# Vispper
 
-## Project info
+AI-powered meeting notes that write themselves. Record, transcribe, copyedit, and summarize—all with one click.
 
-**URL**: https://lovable.dev/projects/8435078f-1a62-4077-8398-bba91eb9b386
+**Live Site**: https://svenmalvik.github.io/vispper/
+
+**Lovable Project**: https://lovable.dev/projects/8435078f-1a62-4077-8398-bba91eb9b386
 
 ## How can I edit this code?
 
@@ -62,7 +64,14 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/8435078f-1a62-4077-8398-bba91eb9b386) and click on Share -> Publish.
+This project is automatically deployed to GitHub Pages via GitHub Actions whenever changes are pushed to the `main` branch.
+
+The deployment workflow:
+1. Builds the project using `npm run build`
+2. Deploys the `dist` folder to GitHub Pages
+3. Site is available at https://svenmalvik.github.io/vispper/
+
+You can also deploy via [Lovable](https://lovable.dev/projects/8435078f-1a62-4077-8398-bba91eb9b386) by clicking Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
