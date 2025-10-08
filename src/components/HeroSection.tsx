@@ -23,14 +23,14 @@ const HeroSection = () => {
           </div>
 
           {/* Brand Name */}
-          <div className="mb-6">
-            <h1 className="text-8xl md:text-9xl font-black bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
+          <div className="mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
               Vispper
             </h1>
           </div>
 
           {/* Main Headline */}
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
+          <h2 className="text-6xl md:text-8xl font-black text-foreground mb-6 leading-tight tracking-tight">
             Never Miss a<br />
             <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Meeting Moment
