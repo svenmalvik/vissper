@@ -1,3 +1,4 @@
+import { QRCodeSVG } from 'qrcode.react';
 
 const FooterCTA = () => {
   return (
@@ -19,16 +20,31 @@ const FooterCTA = () => {
           </p>
 
           <div className="text-center mb-16">
-            <div className="glass-dark border-2 border-white/30 rounded-2xl p-8 max-w-2xl mx-auto shadow-glow">
-              <p className="text-2xl md:text-3xl text-primary-foreground font-bold mb-6">
-                Want to get added to the waiting list?
-              </p>
-              <p className="text-xl md:text-2xl text-primary-foreground/90 mb-3">
-                Reach out via Slack:
-              </p>
-              <p className="text-3xl md:text-4xl text-accent font-black tracking-tight">
-                @Sven Malvik
-              </p>
+            <div className="glass-dark border-2 border-white/30 rounded-2xl p-8 max-w-3xl mx-auto shadow-glow">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                {/* QR Code */}
+                <div className="bg-white p-4 rounded-xl shadow-lg">
+                  <QRCodeSVG
+                    value="http://vispper.no/"
+                    size={180}
+                    level="H"
+                    includeMargin={true}
+                  />
+                </div>
+
+                {/* Text Content */}
+                <div className="flex-1">
+                  <p className="text-2xl md:text-3xl text-primary-foreground font-bold mb-6">
+                    Want to get added to the waiting list?
+                  </p>
+                  <p className="text-xl md:text-2xl text-primary-foreground/90 mb-3">
+                    Reach out via Slack:
+                  </p>
+                  <p className="text-3xl md:text-4xl text-accent font-black tracking-tight">
+                    @Sven Malvik
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
