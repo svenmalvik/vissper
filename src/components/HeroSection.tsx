@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import vispperLogo from "@/assets/vispper-logo-modern.png";
 
 const HeroSection = () => {
   return (
@@ -21,18 +20,6 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 border border-primary/20 shadow-glow">
             <Sparkles className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-foreground">Built for the Hackathon, Ready for Production</span>
-          </div>
-
-          {/* Logo */}
-          <div className="flex justify-center mb-12">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full"></div>
-              <img 
-                src={vispperLogo} 
-                alt="Vispper Logo" 
-                className="relative w-28 h-28 md:w-36 md:h-36 animate-scale-in drop-shadow-2xl"
-              />
-            </div>
           </div>
 
           {/* Main Headline */}
