@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/vispper/" : "/",
+  // Use relative base for custom domain compatibility
+  base: "./",
   server: {
     host: "::",
     port: 8080,
