@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 
 const FooterCTA = () => {
   return (
@@ -14,19 +13,23 @@ const FooterCTA = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
             Interested in Vispper?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Built in 48 hours at the hackathon with production-ready architecture. 
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Built in 48 hours at the hackathon with production-ready architecture.
             Powered by Azure OpenAI and native macOS technologies.
           </p>
 
-          <div className="flex justify-center mb-16">
-            <a 
-              href="mailto:sven@vispper.app"
-              className="inline-flex items-center gap-3 glass-dark hover:bg-white/20 text-primary-foreground text-lg px-10 py-5 rounded-2xl shadow-glow hover:shadow-xl transition-all hover:scale-105 border border-white/20"
-            >
-              <Mail className="h-5 w-5" />
-              Get in Touch
-            </a>
+          <div className="text-center mb-16">
+            <div className="glass-dark border-2 border-white/30 rounded-2xl p-8 max-w-2xl mx-auto shadow-glow">
+              <p className="text-2xl md:text-3xl text-primary-foreground font-bold mb-6">
+                Want to get added to the waiting list?
+              </p>
+              <p className="text-xl md:text-2xl text-primary-foreground/90 mb-3">
+                Reach out via Slack:
+              </p>
+              <p className="text-3xl md:text-4xl text-accent font-black tracking-tight">
+                @Sven Malvik
+              </p>
+            </div>
           </div>
 
           {/* Footer info */}
@@ -35,7 +38,7 @@ const FooterCTA = () => {
               Built with ❤️ by Sven Malvik for the Hackathon
             </p>
             <div className="flex justify-center gap-8 text-xs text-primary-foreground/70">
-              <a href="mailto:sven@vispper.app" className="hover:text-primary-foreground transition-colors">
+              <a href="mailto:sven.malvik@vipps.no" className="hover:text-primary-foreground transition-colors">
                 Contact
               </a>
               <a href="#" className="hover:text-primary-foreground transition-colors">
