@@ -34,17 +34,9 @@ const FooterCTA = () => {
 
           {/* Footer info */}
           <div className="border-t border-white/20 pt-10">
-            <p className="text-primary-foreground/80 text-sm mb-6">
+            <p className="text-primary-foreground/80 text-sm">
               Built with ❤️ by Sven Malvik for the Hackathon
             </p>
-            <div className="flex justify-center gap-8 text-xs text-primary-foreground/70">
-              <a href="mailto:sven.malvik@vipps.no" className="hover:text-primary-foreground transition-colors">
-                Contact
-              </a>
-              <a href="#" className="hover:text-primary-foreground transition-colors">
-                Privacy
-              </a>
-            </div>
           </div>
         </div>
       </div>

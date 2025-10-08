@@ -1,6 +1,6 @@
 const ComparisonSection = () => {
   return (
-    <section className="py-32 bg-background relative">
+    <section id="comparison" className="py-32 bg-background relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">

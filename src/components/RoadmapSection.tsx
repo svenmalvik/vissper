@@ -3,7 +3,7 @@ import { CheckCircle2, Target, Rocket } from "lucide-react";
 const phases = [
   {
     icon: CheckCircle2,
-    title: "Phase 1: Hackathon MVP",
+    title: "Phase 1",
     status: "Current",
     statusColor: "bg-success/10 text-success",
     items: [
@@ -66,18 +66,13 @@ const RoadmapSection = () => {
               >
                 <div className="bg-card rounded-xl p-6 shadow-card border-2 border-border hover:shadow-soft transition-all h-full">
                   {/* Header */}
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="flex flex-col items-center text-center mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl flex items-center justify-center mb-4">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
-                    <div>
-                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-2 ${phase.statusColor}`}>
-                        {phase.status}
-                      </span>
-                      <h3 className="text-lg font-bold text-foreground">
-                        {phase.title}
-                      </h3>
-                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">
+                      {phase.status}
+                    </h3>
                   </div>
 
                   {/* Items */}
