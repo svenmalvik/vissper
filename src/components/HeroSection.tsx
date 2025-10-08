@@ -22,13 +22,20 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-foreground">Built for the Hackathon, Ready for Production</span>
           </div>
 
+          {/* Brand Name */}
+          <div className="mb-6">
+            <h1 className="text-8xl md:text-9xl font-black bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
+              Vispper
+            </h1>
+          </div>
+
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6 leading-tight tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
             Never Miss a<br />
             <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Meeting Moment
             </span>
-          </h1>
+          </h2>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
