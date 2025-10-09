@@ -25,6 +25,7 @@ const phases = [
       "Smart AI contributions to ongoing meetings",
       "Speaker diarization (who said what)",
       "Custom summarization templates",
+      "SSO login",
     ],
     completed: false,
   },
