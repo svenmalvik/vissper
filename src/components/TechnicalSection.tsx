@@ -10,8 +10,8 @@ const technicalHighlights = [
     description: "System-level audio capture for any application",
   },
   {
-    title: "Azure OpenAI Pipeline",
-    description: "Whisper for transcription, GPT-4 for copyediting and summarization",
+    title: "Flexible AI Pipeline",
+    description: "Plug in enterprise-approved ASR and LLM providers like Whisper, GPT-4, Claude, or your own models",
   },
   {
     title: "Intelligent Screenshot Detection",
@@ -37,14 +37,13 @@ const TechnicalSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Built for the Hackathon,<br />
+              Engineered for Enterprise Teams,<br />
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Built for Production
+                Ready for Production
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Vispper isn't just a proof-of-concept—it's a production-quality macOS application 
-              built during this hackathon with enterprise-grade architecture.
+              Vissper is a production-grade macOS application designed to meet enterprise expectations for reliability, security, and seamless integration across complex ecosystems.
             </p>
           </div>
 
@@ -74,7 +73,7 @@ const TechnicalSection = () => {
 
           {/* Tech Stack Badges */}
           <div className="mt-16 flex flex-wrap justify-center gap-4">
-            {['Swift', 'AppKit', 'ScreenCaptureKit', 'Azure OpenAI', 'Combine'].map((tech, index) => (
+            {['Swift', 'AppKit', 'ScreenCaptureKit', 'Custom AI Stack', 'Combine'].map((tech, index) => (
               <span 
                 key={index}
                 className="px-5 py-2.5 glass border border-primary/20 text-primary font-semibold rounded-xl text-sm animate-scale-in hover:border-primary/40 hover:scale-105 transition-all shadow-card"

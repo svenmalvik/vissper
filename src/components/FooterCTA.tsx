@@ -1,5 +1,3 @@
-import { QRCodeSVG } from 'qrcode.react';
-
 const FooterCTA = () => {
   return (
     <section className="py-32 gradient-hero relative overflow-hidden">
@@ -12,36 +10,50 @@ const FooterCTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Interested in Vispper?
+            Bring Vissper Into Your Enterprise
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Built in 48 hours at the hackathon with production-ready architecture.
-            Powered by Azure OpenAI and native macOS technologies.
+            Production-ready from day one, powered by your approved AI stack and native macOS engineering to meet enterprise standards.
           </p>
 
           <div className="text-center mb-16">
-            <div className="glass-dark border-2 border-white/30 rounded-2xl p-8 max-w-3xl mx-auto shadow-glow">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                {/* QR Code */}
-                <div className="bg-white p-4 rounded-xl shadow-lg">
-                  <QRCodeSVG
-                    value="http://vispper.no/"
-                    size={180}
-                    level="H"
-                    includeMargin={true}
-                  />
+            <div className="glass-dark border-2 border-white/30 rounded-2xl p-10 max-w-4xl mx-auto shadow-glow">
+              <div className="space-y-8">
+                <p className="text-3xl md:text-4xl text-primary-foreground font-bold">
+                  Partnering with enterprises to integrate Vissper into mission-critical workflows.
+                </p>
+                <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">
+                  From secure deployment to change management, I work hands-on with stakeholders to tailor Vissper to existing knowledge systems, compliance requirements, and team processes.
+                </p>
+                <div className="grid gap-4 md:grid-cols-3 text-left text-primary-foreground/80">
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
+                    <p className="text-lg font-semibold text-primary-foreground">Integration Workshops</p>
+                    <p className="text-sm mt-2">
+                      Map current workflows and design the rollout plan your teams can adopt immediately.
+                    </p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
+                    <p className="text-lg font-semibold text-primary-foreground">Secure Deployments</p>
+                    <p className="text-sm mt-2">
+                      Align with your security posture, data residency, and audit expectations from day one.
+                    </p>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
+                    <p className="text-lg font-semibold text-primary-foreground">Custom Integrations</p>
+                    <p className="text-sm mt-2">
+                      Embed Vissper alongside internal tools, APIs, and proprietary knowledge bases.
+                    </p>
+                  </div>
                 </div>
-
-                {/* Text Content */}
-                <div className="flex-1">
-                  <p className="text-2xl md:text-3xl text-primary-foreground font-bold mb-6">
-                    Want to get added to the waiting list?
-                  </p>
-                  <p className="text-xl md:text-2xl text-primary-foreground/90 mb-3">
-                    Reach out via Slack:
-                  </p>
-                  <p className="text-3xl md:text-4xl text-accent font-black tracking-tight">
-                    @Sven Malvik
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                  <a
+                    href="mailto:sven@vissper.com?subject=Enterprise%20Partnership"
+                    className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-lg font-semibold text-primary shadow-lg shadow-accent/40 transition hover:bg-accent/90"
+                  >
+                    Start the Conversation
+                  </a>
+                  <p className="text-sm md:text-base text-primary-foreground/70">
+                    Prefer a discovery call? I&apos;ll help scope a pilot tailored to your teams.
                   </p>
                 </div>
               </div>
@@ -51,7 +63,7 @@ const FooterCTA = () => {
           {/* Footer info */}
           <div className="border-t border-white/20 pt-10">
             <p className="text-primary-foreground/80 text-sm">
-              Built with ❤️ by Sven Malvik for the Hackathon
+              Enterprise-grade meeting intelligence, crafted by Sven Malvik
             </p>
           </div>
         </div>
