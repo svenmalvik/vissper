@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Vispper is a landing page built with Vite, React, TypeScript, shadcn-ui, and Tailwind CSS. This project was created using Lovable (lovable.dev) and follows a component-based architecture for marketing pages.
+Vissper is a landing page built with Vite, React, TypeScript, shadcn-ui, and Tailwind CSS. This project was created using Lovable (lovable.dev) and follows a component-based architecture for marketing pages.
 
 ## Development Commands
 

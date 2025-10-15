@@ -1,8 +1,8 @@
-# Vispper
+# vissper
 
 AI-powered meeting notes that write themselves. Record, transcribe, copyedit, and summarize—all with one click.
 
-**Live Site**: https://svenmalvik.github.io/vispper/
+**Live Site**: https://svenmalvik.github.io/vissper/
 
 **Lovable Project**: https://lovable.dev/projects/8435078f-1a62-4077-8398-bba91eb9b386
 
@@ -69,7 +69,7 @@ This project is automatically deployed to GitHub Pages via GitHub Actions whenev
 The deployment workflow:
 1. Builds the project using `npm run build`
 2. Deploys the `dist` folder to GitHub Pages
-3. Site is available at https://svenmalvik.github.io/vispper/
+3. Site is available at https://svenmalvik.github.io/vissper/
 
 You can also deploy via [Lovable](https://lovable.dev/projects/8435078f-1a62-4077-8398-bba91eb9b386) by clicking Share -> Publish.
 

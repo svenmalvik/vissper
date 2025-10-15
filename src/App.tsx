@@ -8,9 +8,9 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Use /vispper basename only for GitHub Pages subdirectory deployment
-// Custom domain (vispper.no) serves from root, so no basename needed
-const basename = window.location.hostname === 'vispper.no' ? '/' : '/vispper';
+// Use /vissper basename only for GitHub Pages subdirectory deployment
+// Custom domain (vissper.com) serves from root, so no basename needed
+const basename = window.location.hostname === 'vissper.com' ? '/' : '/vissper';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>

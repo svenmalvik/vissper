@@ -63,7 +63,15 @@ const FooterCTA = () => {
           {/* Footer info */}
           <div className="border-t border-white/20 pt-10">
             <p className="text-primary-foreground/80 text-sm">
-              Enterprise-grade meeting intelligence, crafted by Sven Malvik
+              Enterprise-grade meeting intelligence, crafted by{" "}
+              <a
+                href="https://www.linkedin.com/in/svenmalvik/"
+                className="underline decoration-primary-foreground/40 hover:decoration-primary-foreground"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Sven Malvik
+              </a>
             </p>
           </div>
         </div>

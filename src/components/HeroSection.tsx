@@ -19,13 +19,13 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 border border-primary/20 shadow-glow">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Built for the Hackathon, Ready for Production</span>
+            <span className="text-sm font-medium text-foreground">Built for Enterprises, Tuned for Teams</span>
           </div>
 
           {/* Brand Name */}
           <div className="mb-8">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
-              Vispper
+              Vissper
             </h1>
           </div>
 

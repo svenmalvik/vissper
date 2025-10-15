@@ -10,7 +10,7 @@ const features = [
   {
     icon: Brain,
     title: "Real-Time AI Processing",
-    description: "Azure OpenAI transcribes as you speak. Screenshots are automatically timestamped and linked to exact moments in the conversation.",
+    description: "Your preferred AI services transcribe as you speak. Screenshots are automatically timestamped and linked to exact moments in the conversation.",
     gradient: "from-accent/20 to-success/20",
   },
   {
