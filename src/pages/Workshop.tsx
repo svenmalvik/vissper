@@ -3,10 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   CalendarClock,
   Clock,
-  Rocket,
-  Workflow,
-  ShieldCheck,
-  Brain,
   Sparkles,
   FileText,
   Users,
@@ -16,36 +12,9 @@ import {
   PiggyBank,
 } from "lucide-react";
 
-const highlights = [
-  {
-    icon: Brain,
-    title: "Foundation First",
-    description:
-      "Understand how GPT-4.1, GPT-4.1 Mini, and modern transcription models power Vissper’s experience.",
-  },
-  {
-    icon: Workflow,
-    title: "Production Patterns",
-    description:
-      "Learn prompt chaining, reflection loops, structured outputs, and tool calling with hands-on labs.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Safe & Reliable",
-    description:
-      "Design guardrails, evaluation harnesses, and human oversight so AI output stays production-ready.",
-  },
-  {
-    icon: Rocket,
-    title: "Ship with Confidence",
-    description:
-      "Implement token tracking, monetization analytics, and rollout plans tailored to enterprise teams.",
-  },
-];
-
 const modules = [
   {
-    title: "Module 1 — Understand the Product & Core AI Tools",
+    title: "Module 1 — Real AI Foundations",
     summary:
       "Frame the user problems, pick the right models, and set up your toolkit for the week.",
     bullets: [
@@ -58,7 +27,7 @@ const modules = [
     ],
   },
   {
-    title: "Module 2 — Build the Capture & Prompt Flow",
+    title: "Module 2 — Production Workflows",
     summary:
       "Transform raw meeting inputs into clean narratives, insights, and visuals.",
     bullets: [
@@ -71,7 +40,7 @@ const modules = [
     ],
   },
   {
-    title: "Module 3 — Make It Reliable & Collaborative",
+    title: "Module 3 — Trust & Collaboration",
     summary:
       "Add the guardrails, evaluation, and feedback loops that teams expect.",
     bullets: [
@@ -83,7 +52,7 @@ const modules = [
     ],
   },
   {
-    title: "Module 4 — Ship, Charge, and Scale",
+    title: "Module 4 — Launch & Monetize",
     summary:
       "Package the experience, monetize usage, and plan the enterprise rollout.",
     bullets: [
@@ -188,6 +157,46 @@ const Workshop = () => {
         </div>
       </section>
 
+      <section className="relative py-24 bg-background">
+        <div className="absolute inset-0">
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+        </div>
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Modules, One Production-Ready Workflow</h2>
+            <p className="text-lg text-muted-foreground">
+              Each module blends vibe-coded demos with specification-driven labs so your team can apply the patterns immediately.
+            </p>
+          </div>
+          <div className="grid gap-10">
+            {modules.map((module, index) => (
+              <div
+                key={module.title}
+                className="glass border border-border/70 rounded-3xl p-8 md:p-10 shadow-card hover:shadow-primary/20 transition"
+              >
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                  <div className="space-y-3 max-w-xl">
+                    <h3 className="text-xl md:text-2xl font-semibold">{module.title}</h3>
+                    <p className="text-muted-foreground">{module.summary}</p>
+                  </div>
+                  <span className="self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+                    Module {index + 1}
+                  </span>
+                </div>
+                <ul className="mt-6 grid gap-3 md:grid-cols-2 text-sm md:text-base text-muted-foreground">
+                  {module.bullets.map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-3">
+                      <Sparkles className="mt-1 h-4 w-4 text-primary" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-14">
@@ -273,75 +282,6 @@ const Workshop = () => {
                 Ask About Team Seats
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Teams Choose This Workshop</h2>
-            <p className="text-lg text-muted-foreground">
-              Every session is packed with hands-on coding, practical takeaways, and reusable systems for your own AI-powered products.
-            </p>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2">
-            {highlights.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <Card key={item.title} className="glass border border-border/60 shadow-card hover:shadow-primary/20 transition">
-                  <CardHeader className="flex flex-row items-center gap-4">
-                    <div className="rounded-2xl bg-primary/10 p-3 text-primary">
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <CardTitle className="text-2xl">{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section className="relative py-24 bg-background">
-        <div className="absolute inset-0">
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-        </div>
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Modules, One Production-Ready Workflow</h2>
-            <p className="text-lg text-muted-foreground">
-              Each module blends vibe-coded demos with specification-driven labs so your team can apply the patterns immediately.
-            </p>
-          </div>
-          <div className="grid gap-10">
-            {modules.map((module, index) => (
-              <div
-                key={module.title}
-                className="glass border border-border/70 rounded-3xl p-8 md:p-10 shadow-card hover:shadow-primary/20 transition"
-              >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-                  <div className="space-y-3 max-w-xl">
-                    <h3 className="text-xl md:text-2xl font-semibold">{module.title}</h3>
-                    <p className="text-muted-foreground">{module.summary}</p>
-                  </div>
-                  <span className="self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-                    Module {index + 1}
-                  </span>
-                </div>
-                <ul className="mt-6 grid gap-3 md:grid-cols-2 text-sm md:text-base text-muted-foreground">
-                  {module.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-3">
-                      <Sparkles className="mt-1 h-4 w-4 text-primary" />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         </div>
       </section>
