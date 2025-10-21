@@ -92,8 +92,15 @@ const bonuses = [
 const facilitators = [
   {
     name: "Sven Malvik",
-    role: "Creator of Vissper • AI Engineering Lead",
-    bio: "Guides teams from prototype to production with hands-on macOS and AI expertise.",
+    role: "Principal Platform Engineer • Head of Core AI, Vipps MobilePay",
+    bio: "Three decades shipping software across cloud and native stacks, now focused on production-grade generative AI for European enterprises.",
+    highlights: [
+      "Creator of Vissper, the macOS AI meeting companion we rebuild in the workshop",
+      "Former Microsoft Azure MVP and author of “Mastering Azure API Management”",
+      "Public speaker at Microsoft Build, NDC, JavaZone, and more",
+      "Leads the Core AI team at Vipps MobilePay with a mandate to ship reliable AI features",
+      "30 years of hands-on software engineering across native, cloud, and AI platforms",
+    ],
   },
   {
     name: "Guest AI Engineer",
@@ -395,7 +402,17 @@ const Workshop = () => {
                     <p className="text-sm font-medium text-primary">{facilitator.role}</p>
                   </div>
                 </div>
-                <p className="mt-4 text-muted-foreground">{facilitator.bio}</p>
+                <p className="mt-4 text-muted-foreground leading-relaxed">{facilitator.bio}</p>
+                {facilitator.highlights && (
+                  <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                    {facilitator.highlights.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <Sparkles className="mt-0.5 h-4 w-4 text-primary" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
