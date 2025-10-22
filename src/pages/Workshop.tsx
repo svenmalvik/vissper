@@ -278,13 +278,13 @@ const Workshop = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
                 <div>
-                  <p className="text-3xl font-semibold text-foreground">$490</p>
+                  <p className="text-3xl font-semibold text-foreground">EUR 450</p>
                   <p className="text-sm text-muted-foreground">per developer seat · max 20 participants</p>
                 </div>
                 <ul className="space-y-2 text-sm">
                   <li>• 10% early bird when you register 21+ days in advance</li>
-                  <li>• Team bundle: 4 seats for $1,760 (save $200)</li>
-                  <li>• Includes recordings, build notebook, Slack community, and office hours</li>
+                  <li>• Team bundle: 4 seats for EUR 1,620 (save EUR 180)</li>
+                  <li>• Includes starter repo, prompts, Slack community, and office hours</li>
                   <li>• Prices exclude VAT (charged at checkout)</li>
                 </ul>
               </CardContent>
@@ -302,12 +302,12 @@ const Workshop = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
                 <div>
-                  <p className="text-3xl font-semibold text-foreground">$6,900</p>
-                  <p className="text-sm text-muted-foreground">up to 10 participants · +$350 per additional attendee</p>
+                  <p className="text-3xl font-semibold text-foreground">EUR 6,300</p>
+                  <p className="text-sm text-muted-foreground">up to 10 participants · +EUR 320 per additional attendee</p>
                 </div>
                 <ul className="space-y-2 text-sm">
                   <li>• Custom agenda, async code reviews, and two follow-up coaching calls</li>
-                  <li>• Optional remote integration day for $2,400</li>
+                  <li>• Optional remote integration day for EUR 2,200</li>
                   <li>• Travel invoiced at cost or arranged directly by your team</li>
                   <li>• Prices exclude VAT (charged at checkout)</li>
                 </ul>
