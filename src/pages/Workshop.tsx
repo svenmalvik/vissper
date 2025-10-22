@@ -11,81 +11,52 @@ import {
   ReceiptEuro,
   PiggyBank,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const modules = [
   {
-    title: "Module 1 — Real AI Foundations",
+    title: "Session 1 — Master AI Architecture, Agent Workflows & Refactoring",
     summary:
-      "Frame the user problems, pick the right models, and set up your toolkit for the week.",
+      "Set up the full meeting companion pipeline end-to-end so audio reliably lands as structured transcripts you can build on.",
     bullets: [
-      "Walk through the landing page and align on meeting pain points.",
-      "Connect to OpenAI and Azure OpenAI safely with environment-based credentials.",
-      "Compare GPT, Claude, Gemini, and Llama for latency, quality, and policy fit.",
-      "Master tokens, context windows, temperature, and top-p for predictable output.",
-      "Structure prompts with system/user/assistant roles and clear tone guides.",
-      "Agree when to vibe-code versus follow a spec-driven approach.",
+      "Clone the starter repo, configure credentials, and map the architecture your team will ship with.",
+      "Apply agent vs workflow patterns so your meeting companion reacts predictably for your users.",
+      "Wire up the LLM connections and environment management your meeting companion relies on.",
+      "Refactor your codebase on the spot with vibe-coding and specification-driven development so it stays adaptable.",
     ],
   },
   {
-    title: "Module 2 — Production Workflows",
+    title: "Session 2 — Deliver Meeting Intelligence & Plan Future AI Upgrades",
     summary:
-      "Transform raw meeting inputs into clean narratives, insights, and visuals.",
+      "Layer automation, guardrails, and deployment steps so your first AI companion is ready for your users.",
     bullets: [
-      "Connect transcription providers and keep transcripts aligned with media events.",
-      "Compose instruction, chain-of-thought, and few-shot prompts for fast iteration.",
-      "Add reflection loops that critique and improve drafts automatically.",
-      "Design function signatures and request structured JSON from tool calls.",
-      "Validate tool responses with lightweight unit checks before they reach users.",
-      "Use vision models to caption screenshots and weave them into the story.",
-    ],
-  },
-  {
-    title: "Module 3 — Trust & Collaboration",
-    summary:
-      "Add the guardrails, evaluation, and feedback loops that teams expect.",
-    bullets: [
-      "List high-risk hallucination scenarios and craft targeted guardrails.",
-      "Log prompts and responses, redact sensitive data, and replay failures safely.",
-      "Manage long sessions with chunking, retrieval, and embedding-powered lookups.",
-      "Build rubric-based evaluations and wire automated tests or Evals into CI.",
-      "Capture user feedback, comments, and corrections to tune prompts over time.",
-    ],
-  },
-  {
-    title: "Module 4 — Launch & Monetize",
-    summary:
-      "Package the experience, monetize usage, and plan the enterprise rollout.",
-    bullets: [
-      "Deliver polished exports (Markdown, HTML, PDF) with linked screenshots.",
-      "Instrument per-user token meters and surface dashboards or APIs.",
-      "Define licensing tiers, usage policies, and alerts for anomalous activity.",
-      "Review security, privacy, and compliance steps for enterprise pilots.",
-      "Extend tool calling with agent hand-offs and validation gates.",
-      "Outline launch analytics, stakeholder comms, and success metrics.",
+      "Master the core AI patterns from the workshop so you can reuse them safely on your own features.",
+      "Build agentic tools into your meeting companion so it gets smarter with every release.",
+      "Design prompts, guardrails, and fast evaluation loops that keep meeting notes grounded in the transcript.",
+      "Explore additional AI concepts you can layer in after the cohort to keep shipping improvements.",
     ],
   },
 ];
 
 const bonuses = [
   {
-    title: "Live Build Sessions",
+    title: "Workshop Starter Repo",
     description:
-      "Code alongside the instructor during vibe-code segments, then cement the work with specification-driven labs.",
+      "The same meeting companion codebase we configure together, including the transcription pipeline and agent workflow scaffolding.",
   },
   {
-    title: "Reusable Prompt Library",
+    title: "Prompt & Workflow Templates",
     description:
-      "Leave with ready-to-use prompt templates, evaluation rubrics, and tool-calling schemas.",
+      "Copyable prompts, guardrail patterns, and workflow snippets used in the live build so you can adapt them to your stack immediately.",
   },
   {
-    title: "Access to Recordings",
-    description:
-      "Every evening is recorded so your team can revisit demos and walkthroughs anytime.",
+    title: "Session Replays",
+    description: "Recordings of both live sessions so you can review the walkthroughs and share them with teammates.",
   },
   {
-    title: "Office Hours & Slack",
+    title: "Slack & Office Hours",
     description:
-      "Join follow-up office hours and a private Slack channel to keep shipping after the workshop.",
+      "Access to the private Slack channel plus follow-up office hours for troubleshooting once you apply the patterns on your own builds.",
   },
 ];
 
@@ -93,9 +64,9 @@ const facilitators = [
   {
     name: "Sven Malvik",
     role: "Principal Platform Engineer • Head of Core AI, Vipps MobilePay",
-    bio: "Three decades shipping software across cloud and native stacks, now focused on production-grade generative AI for European enterprises.",
+    bio: "Three decades shipping software across cloud and native stacks, now focused on helping teams adopt generative AI across European enterprises.",
     highlights: [
-      "Creator of Vissper, the macOS AI meeting companion we rebuild in the workshop",
+      "Creator of the macOS AI meeting companion used as the workshop case study",
       "Former Microsoft Azure MVP and author of “Mastering Azure API Management”",
       "Public speaker at Microsoft Build, NDC, JavaZone, and more",
       "Leads the Core AI team at Vipps MobilePay with a mandate to ship reliable AI features",
@@ -112,6 +83,13 @@ const facilitators = [
 const Workshop = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <div className="bg-background/90 border-b border-border/60 backdrop-blur">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between text-sm">
+          <Link to="/" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
+            Vissper — Return to Product Home
+          </Link>
+        </div>
+      </div>
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/10">
         <div className="absolute inset-0">
           <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-primary/30 blur-3xl"></div>
@@ -122,42 +100,32 @@ const Workshop = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary backdrop-blur">
               <CalendarClock className="h-4 w-4" />
-              Four-Module Generative AI Workshop
+              Live build-along: Ship your first AI companion
             </span>
             <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
-              Build Production-Ready AI Tools
-              <br className="hidden md:block" />
-              <span className="text-foreground/90">Use Vissper as Your Case Study</span>
+              Build a Smart AI Meeting Companion Together.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              A hands-on program for developers who want to ship real generative AI. We use Vissper’s
-              meeting companion as the playground, but every pattern, prompt, and tool you learn
-              transfers to your own products—online or on-site.
+              A practical workshop where I show exactly how a smart AI meeting companion comes together, step by step. Ideal for developers who have not yet
+              shipped their own AI agents or workflows but want to learn the patterns from an end-to-end applied build.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30">
-                Reserve Your Seat
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full border border-border/60 px-8 py-6 text-lg backdrop-blur"
-              >
-                Download Workshop Guide
+                Join the Online Build Workshop
               </Button>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-primary" />
-                Public cohort · Four online evenings (2.5h each)
+                Public cohort · Two live build evenings (2.5h each)
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-primary" />
-                Ideal for product-minded developers
+                Built for developers shipping their first AI-powered tool
               </div>
               <div className="flex items-center gap-2">
                 <Building2 className="h-4 w-4 text-primary" />
-                Private cohorts available on-site in a single full-day format
+                Private cohorts available for in-house product squads
               </div>
             </div>
           </div>
@@ -170,9 +138,9 @@ const Workshop = () => {
         </div>
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Four Modules, One Production-Ready Workflow</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Two Live Build Sessions To Ship Your First AI Meeting Companion</h2>
             <p className="text-lg text-muted-foreground">
-              Each module blends vibe-coded demos with specification-driven labs so your team can apply the patterns immediately.
+              Each evening blends live coding with guided labs so you can copy the exact patterns straight into your own product.
             </p>
           </div>
           <div className="grid gap-10">
@@ -187,7 +155,7 @@ const Workshop = () => {
                     <p className="text-muted-foreground">{module.summary}</p>
                   </div>
                   <span className="self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-                    Module {index + 1}
+                    Session {index + 1}
                   </span>
                 </div>
                 <ul className="mt-6 grid gap-3 md:grid-cols-2 text-sm md:text-base text-muted-foreground">
@@ -207,9 +175,9 @@ const Workshop = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Choose the Format That Fits</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Pick Your Build-Along Format</h2>
             <p className="text-lg text-muted-foreground">
-              Join a public online cohort across four evenings, or bring us on-site for a condensed full-day lab tailored to your team.
+              Join a small public cohort and build alongside peers, or bring me in-house to tailor the smart AI meeting companion blueprint to your stack.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
@@ -220,17 +188,15 @@ const Workshop = () => {
                 </div>
                 <div>
                   <CardTitle className="text-2xl">Public Online Cohort</CardTitle>
-                  <p className="text-sm text-muted-foreground">Four evenings · Live remote sessions</p>
+                  <p className="text-sm text-muted-foreground">Two evenings · Live remote sessions</p>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
-                <p>
-                  Ideal for individuals and smaller teams who want to collaborate with peers from other organizations.
-                </p>
+                <p>Perfect for individual developers or small teams ready to ship their first AI workflow.</p>
                 <ul className="space-y-2 text-sm">
-                  <li>• Zoom-based delivery with collaborative coding sessions</li>
-                  <li>• Includes recordings, Slack community, and office hours</li>
-                  <li>• Early-bird and team bundles available</li>
+                  <li>• Live coding with breakout rooms for debugging and Q&amp;A</li>
+                  <li>• Includes recordings, private Slack, and follow-up office hours</li>
+                  <li>• Cohort capped at 20 seats so everyone gets hands-on help</li>
                 </ul>
               </CardContent>
             </Card>
@@ -246,13 +212,11 @@ const Workshop = () => {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
-                <p>
-                  We come to your office and guide your cross-functional team through a tailored agenda in one focused day.
-                </p>
+                <p>Bring your product, platform, and design teams together for a targeted build day around your smart AI meeting companion.</p>
                 <ul className="space-y-2 text-sm">
-                  <li>• Custom agenda aligned with your product roadmap</li>
-                  <li>• Optional follow-up coaching and integration support</li>
-                  <li>• Executive debrief summarizing outcomes and next steps</li>
+                  <li>• Custom agenda aligned to your repositories, security model, and roadmap</li>
+                  <li>• Optional follow-up coaching, async code reviews, and integrations</li>
+                  <li>• Leadership debrief highlighting risks, quick wins, and next hires</li>
                 </ul>
               </CardContent>
             </Card>
@@ -265,26 +229,26 @@ const Workshop = () => {
           <div className="max-w-3xl mx-auto text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Next Public Online Cohort</h2>
             <p className="text-lg text-muted-foreground">
-              Four live evening sessions delivered online. Each module runs at 19:00 Oslo (CET) so European teams can join after work.
+              Two live build evenings delivered online. Every session starts at 18:00 CET (Oslo) so you can join after work and apply the patterns the next morning.
             </p>
           </div>
           <div className="glass border border-border/60 rounded-3xl shadow-card p-8 md:p-10 max-w-2xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
-                <p className="text-sm font-semibold text-primary uppercase tracking-wide">January 2026</p>
-                <h3 className="text-2xl font-bold mt-1">Evenings: 20, 22, 27, 29 January</h3>
+                <p className="text-sm font-semibold text-primary uppercase tracking-wide">December 2025</p>
+                <h3 className="text-2xl font-bold mt-1">Evenings: 2 &amp; 4 December</h3>
               </div>
               <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-                19:00–21:30 Oslo time
+                18:00–20:30 CET (Oslo)
               </span>
             </div>
             <ul className="mt-6 space-y-3 text-muted-foreground text-sm md:text-base">
-              <li>• Tuesdays & Thursdays across the final two weeks of January</li>
-              <li>• Live on Zoom with collaborative coding and Q&amp;A</li>
-              <li>• Recordings and resources shared within 24 hours</li>
+              <li>• Tuesday and Thursday in the first week of December so you can ship updates between sessions</li>
+              <li>• Live on Zoom with screen-shared coding, breakout labs, and structured Q&amp;A</li>
+              <li>• Recordings, prompts, and code drops shared within 24 hours</li>
             </ul>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Button className="rounded-full px-6 py-5 text-base sm:flex-1">Apply for the January Cohort</Button>
+              <Button className="rounded-full px-6 py-5 text-base sm:flex-1">Apply for the December Cohort</Button>
               <Button variant="outline" className="rounded-full px-6 py-5 text-base sm:flex-1">
                 Ask About Team Seats
               </Button>
@@ -298,7 +262,7 @@ const Workshop = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Pricing &amp; What&apos;s Included</h2>
             <p className="text-lg text-muted-foreground">
-              Transparent pricing for both online and on-site cohorts. Rates shown before applicable taxes; VAT/GST or sales tax is added when required.
+              Straightforward pricing for both public and private cohorts. Prices shown before applicable taxes; VAT/GST or sales tax is added when required.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
@@ -309,18 +273,18 @@ const Workshop = () => {
                 </div>
                 <div>
                   <CardTitle className="text-2xl">Public Online Cohort</CardTitle>
-                  <p className="text-sm text-muted-foreground">Four modules · Live remote sessions</p>
+                  <p className="text-sm text-muted-foreground">Two sessions · Live remote build</p>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
                 <div>
-                  <p className="text-3xl font-semibold text-foreground">$850</p>
-                  <p className="text-sm text-muted-foreground">per developer seat · max 25 participants</p>
+                  <p className="text-3xl font-semibold text-foreground">$490</p>
+                  <p className="text-sm text-muted-foreground">per developer seat · max 20 participants</p>
                 </div>
                 <ul className="space-y-2 text-sm">
-                  <li>• 10% early-bird discount when booked 30+ days ahead</li>
-                  <li>• Team bundle: 5 seats for $3,800 (save $450)</li>
-                  <li>• Includes recordings, Slack community, office hours, and prompt/tool library</li>
+                  <li>• 10% early bird when you register 21+ days in advance</li>
+                  <li>• Team bundle: 4 seats for $1,760 (save $200)</li>
+                  <li>• Includes recordings, build notebook, Slack community, and office hours</li>
                   <li>• Prices exclude VAT (charged at checkout)</li>
                 </ul>
               </CardContent>
@@ -338,13 +302,13 @@ const Workshop = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
                 <div>
-                  <p className="text-3xl font-semibold text-foreground">$9,500</p>
-                  <p className="text-sm text-muted-foreground">up to 12 participants · +$400 per additional attendee</p>
+                  <p className="text-3xl font-semibold text-foreground">$6,900</p>
+                  <p className="text-sm text-muted-foreground">up to 10 participants · +$350 per additional attendee</p>
                 </div>
                 <ul className="space-y-2 text-sm">
-                  <li>• Custom agenda, executive debrief, and two follow-up coaching calls</li>
-                  <li>• Add remote half-day integration session for $3,000</li>
-                  <li>• Travel expenses invoiced at actuals or arranged by your team</li>
+                  <li>• Custom agenda, async code reviews, and two follow-up coaching calls</li>
+                  <li>• Optional remote integration day for $2,400</li>
+                  <li>• Travel invoiced at cost or arranged directly by your team</li>
                   <li>• Prices exclude VAT (charged at checkout)</li>
                 </ul>
               </CardContent>
@@ -358,7 +322,7 @@ const Workshop = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">What You&apos;ll Take Back</h2>
             <p className="text-lg text-muted-foreground">
-              Every team leaves with code, templates, and frameworks that slot directly into ongoing projects.
+              Leave with the starter repo, prompts, and support to recreate the full meeting companion flow after the workshop.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
@@ -427,21 +391,21 @@ const Workshop = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold">
-              Ready to Build Vissper&apos;s AI Companion With Your Team?
+              Ready to Launch Your Smart AI Meeting Companion?
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-              Secure your workshop dates, invite your core product squad, and bring your toughest meeting workflows.
-              We’ll transform them together—across four online evenings or a full on-site intensive.
+              Lock in your workshop dates, bring your toughest meeting workflows, and we will rebuild the smart AI meeting companion together.
+              You will leave with code, prompts, and a repeatable playbook for every future AI-powered tool.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" variant="secondary" className="rounded-full px-8 py-6 text-lg">
-                Book Private Cohort
+                Book a Private Build Day
               </Button>
               <Button
                 size="lg"
                 className="rounded-full px-8 py-6 text-lg bg-white text-primary shadow-primary/30 shadow-lg hover:bg-white/90"
               >
-                Join the Next Public Session
+                Join the Next Public Build Cohort
               </Button>
             </div>
             <p className="text-sm text-primary-foreground/70">
@@ -457,6 +421,15 @@ const Workshop = () => {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-border/60 bg-background/90">
+        <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-muted-foreground md:flex-row">
+          <p className="text-center md:text-left">© {new Date().getFullYear()} Vissper. All rights reserved.</p>
+          <Link to="/privacy" className="underline decoration-muted-foreground/60 hover:text-primary">
+            Privacy
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 };

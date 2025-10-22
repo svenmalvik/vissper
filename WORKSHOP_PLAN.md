@@ -1,10 +1,10 @@
-# Vissper Workshop Blueprint
+# Smart AI Meeting Companion Workshop Blueprint
 
 ## Workshop Goals
-- Explain the meeting pain points Vissper tackles so every build choice supports real needs.
+- Explain the meeting pain points the smart AI meeting companion tackles so every build choice supports practical needs.
 - Recreate the four-step flow (record, transcribe, copyedit, export) while learning the AI skills behind it.
 - Compare a native macOS build with a Node.js + Electron build so we know how to reach both Mac and Windows users.
-- Prepare for real customers by planning token tracking, pricing, and the enterprise conversations that follow.
+- Prepare for early customers by planning token tracking, pricing, and the enterprise conversations that follow.
 
 ## Content Pillars
 - Story first: connect landing-page messaging to technical priorities.
@@ -42,7 +42,7 @@ We harden the experience by adding safety checks, context control, and team work
 - Capture user feedback and corrections so prompts and models improve over time.
 
 ### Module 4 – Ship, Charge, and Scale
-We package the solution for real teams, plan how to charge for it, and cover the enterprise checks.
+We package the solution for delivery teams, plan how to charge for it, and cover the enterprise checks.
 - Finish export flows (Markdown, HTML, PDF) that bundle transcripts, screenshots, and summaries.
 - Implement per-user token meters in code, store usage, and expose dashboards or APIs for billing.
 - Pick licensing rules, usage limits, and alerts for overuse or unusual activity.

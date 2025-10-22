@@ -4,26 +4,26 @@ const plans = [
   {
     name: "Strategic Pilot",
     price: "Tailored engagement",
-    description: "Co-design a production-ready pilot with executive sponsors and critical stakeholders.",
+    description: "Co-design an applied generative AI pilot with your core developers and critical stakeholders.",
     icon: Briefcase,
     features: [
-      "SSO integration with secure device posture checks",
-      "Adaptive AI tuning informed by stakeholder feedback",
-      "Shared roadmap planning for custom capabilities",
-      "Guided onboarding sessions for early adopters",
+      "Kickoff workshops to map current meeting workflows and learning goals",
+      "Hands-on build sprints pairing with your engineers",
+      "Shared roadmap planning for new AI capabilities",
+      "Guided enablement sessions so practices stick",
     ],
     badge: "Great for innovation teams",
   },
   {
     name: "Enterprise Partnership",
     price: "Annual collaboration",
-    description: "Scale Vissper across business units with guided enablement, compliance, and integrations.",
+    description: "Scale your smart AI meeting companion learnings across teams with guided enablement, governance, and integrations.",
     icon: Building2,
     features: [
-      "Smart AI meeting companion to enhance existing workflows",
-      "24/7 support with optional on-site escalation",
-      "Centralized meeting notes hub that syncs across teams",
-      "Quarterly strategy reviews to expand capabilities",
+      "Smart AI meeting companion patterns tailored to your roadmap",
+      "Ongoing office hours and async code reviews",
+      "Documentation and playbooks your teams can extend",
+      "Quarterly learning reviews to expand capabilities",
     ],
     badge: "Most popular",
   },
@@ -81,7 +81,7 @@ const RoadmapSection = () => {
                   </ul>
 
                   <a
-                    href="mailto:sales@vissper.com?subject=Vissper%20Enterprise%20Pricing"
+                    href="mailto:sven@malvik.de?subject=AI%20Meeting%20Companion%20Partnership"
                     className="mt-auto inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90"
                   >
                     Talk to Sales

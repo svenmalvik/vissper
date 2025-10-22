@@ -22,25 +22,14 @@ const HeroSection = () => {
             <span className="text-sm font-medium text-foreground">Built for Enterprises, Tuned for Teams</span>
           </div>
 
-          {/* Brand Name */}
-          <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent tracking-tight">
-              Vissper
-            </h1>
-          </div>
-
           {/* Main Headline */}
           <h2 className="text-6xl md:text-8xl font-black text-foreground mb-6 leading-tight tracking-tight">
-            Never Miss a<br />
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Meeting Moment
-            </span>
+            Learn to Build a Smart AI Meeting Companion
           </h2>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            AI-powered meeting notes that write themselves. Record, transcribe, 
-            copyedit, and summarize—all with one click.
+            Capture, transcribe, and summarize meetings while mastering the generative AI workflows that power agentic products.
           </p>
 
           {/* CTA Button */}

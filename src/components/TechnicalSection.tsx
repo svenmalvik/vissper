@@ -37,13 +37,13 @@ const TechnicalSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Engineered for Enterprise Teams,<br />
+              Engineered for Developers,<br />
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Ready for Production
+                Ready to Teach Generative AI
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Vissper is a production-grade macOS application designed to meet enterprise expectations for reliability, security, and seamless integration across complex ecosystems.
+              This smart AI meeting companion exposes the practical patterns—capture pipelines, agent orchestration, and evaluation loops—so developers can practice shipping generative AI with confidence.
             </p>
           </div>
 
