@@ -12,6 +12,7 @@ import {
   PiggyBank,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import SvenMalvikImage from "@/assets/svenmalvik.png";
 
 const modules = [
   {
@@ -65,6 +66,7 @@ const facilitators = [
     name: "Sven Malvik",
     role: "Principal Platform Engineer • Head of Core AI, Vipps MobilePay",
     bio: "Three decades shipping software across cloud and native stacks, now focused on helping teams adopt generative AI across European enterprises.",
+    image: SvenMalvikImage,
     highlights: [
       "Creator of the macOS AI meeting companion used as the workshop case study",
       "Former Microsoft Azure MVP and author of “Mastering Azure API Management”",
@@ -110,8 +112,14 @@ const Workshop = () => {
               shipped their own AI agents or workflows but want to learn the patterns from an end-to-end applied build.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30">
-                Join the Online Build Workshop
+              <Button
+                asChild
+                size="lg"
+                className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30"
+              >
+                <a href="https://tally.so/r/mZp4QB" target="_blank" rel="noreferrer">
+                  Join the Online Build Workshop
+                </a>
               </Button>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
@@ -248,9 +256,15 @@ const Workshop = () => {
               <li>• Recordings, prompts, and code drops shared within 24 hours</li>
             </ul>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Button className="rounded-full px-6 py-5 text-base sm:flex-1">Apply for the December Cohort</Button>
-              <Button variant="outline" className="rounded-full px-6 py-5 text-base sm:flex-1">
-                Ask About Team Seats
+              <Button asChild className="rounded-full px-6 py-5 text-base sm:flex-1">
+                <a href="https://tally.so/r/mZp4QB" target="_blank" rel="noreferrer">
+                  Apply for the December Cohort
+                </a>
+              </Button>
+              <Button variant="outline" asChild className="rounded-full px-6 py-5 text-base sm:flex-1">
+                <a href="https://tally.so/r/3xkjvE" target="_blank" rel="noreferrer">
+                  Ask About Team Seats
+                </a>
               </Button>
             </div>
           </div>
@@ -358,9 +372,17 @@ const Workshop = () => {
                 className="glass border border-border/60 rounded-3xl p-8 shadow-card hover:shadow-primary/20 transition"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <Users className="h-7 w-7" />
-                  </div>
+                  {facilitator.image ? (
+                    <img
+                      src={facilitator.image}
+                      alt={facilitator.name}
+                      className="h-20 w-20 rounded-2xl object-cover shadow-lg"
+                    />
+                  ) : (
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                      <Users className="h-7 w-7" />
+                    </div>
+                  )}
                   <div>
                     <h3 className="text-xl font-semibold">{facilitator.name}</h3>
                     <p className="text-sm font-medium text-primary">{facilitator.role}</p>
@@ -398,14 +420,19 @@ const Workshop = () => {
               You will leave with code, prompts, and a repeatable playbook for every future AI-powered tool.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" variant="secondary" className="rounded-full px-8 py-6 text-lg">
-                Book a Private Build Day
+              <Button size="lg" variant="secondary" asChild className="rounded-full px-8 py-6 text-lg">
+                <a href="https://tally.so/r/3xkjvE" target="_blank" rel="noreferrer">
+                  Book a Private Build Day
+                </a>
               </Button>
               <Button
+                asChild
                 size="lg"
                 className="rounded-full px-8 py-6 text-lg bg-white text-primary shadow-primary/30 shadow-lg hover:bg-white/90"
               >
-                Join the Next Public Build Cohort
+                <a href="https://tally.so/r/mZp4QB" target="_blank" rel="noreferrer">
+                  Join the Next Public Build Cohort
+                </a>
               </Button>
             </div>
             <p className="text-sm text-primary-foreground/70">
