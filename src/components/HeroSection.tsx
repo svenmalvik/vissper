@@ -24,12 +24,12 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h2 className="text-6xl md:text-8xl font-black text-foreground mb-6 leading-tight tracking-tight">
-            Learn to Build a Smart AI Meeting Companion
+            Meet Vissper, Your Smart AI Meeting Companion
           </h2>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Capture, transcribe, and summarize meetings while mastering the generative AI workflows that power agentic products.
+            Capture, transcribe, and summarize meetings automatically so teams stay aligned, informed, and ready to ship what matters.
           </p>
 
           {/* CTA Button */}
