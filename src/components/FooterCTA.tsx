@@ -49,7 +49,9 @@ const FooterCTA = () => {
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                   <a
-                    href="mailto:sven@malvik.de?subject=Generative%20AI%20Workshop%20Inquiry"
+                    href="https://tally.so/r/3xkjvE"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-lg font-semibold text-primary shadow-lg shadow-accent/40 transition hover:bg-accent/90"
                   >
                     Start the Conversation
