@@ -15,7 +15,7 @@ const Privacy = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-3xl space-y-10">
           <section className="space-y-4">
-            <p className="text-sm font-semibold uppercase tracking-wide text-primary">Effective November 2024</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-primary">Effective October 2025</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Vissper helps teams learn how to architect and ship smart meeting companions. This privacy notice explains what data is collected, how it is used,
               and the choices available to you. The aim is to keep the policy readable, jargon-free, and aligned with GDPR expectations.
