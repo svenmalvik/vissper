@@ -14,7 +14,7 @@ const Index = () => {
       <div className="bg-background/90 border-b border-border/60 backdrop-blur">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between text-sm">
           <Link to="/workshop" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
-            Join the Smart AI Meeting Companion Workshop
+            Join the Smart AI Meeting Companion <span className="text-primary">Workshop</span>
           </Link>
         </div>
       </div>
