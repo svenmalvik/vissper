@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Workshop from "./pages/Workshop";
 import ThankYou from "./pages/ThankYou";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename={basename}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/workshop" element={<Workshop />} />

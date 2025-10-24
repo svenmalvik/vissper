@@ -10,6 +10,7 @@ import {
   Monitor,
   ReceiptEuro,
   PiggyBank,
+  ExternalLink,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import SvenMalvikImage from "@/assets/svenmalvik.png";
@@ -64,11 +65,12 @@ const bonuses = [
 const facilitators = [
   {
     name: "Sven Malvik",
-    role: "Principal Platform Engineer • Head of Core AI, Vipps MobilePay",
+    role: "Principal Platform Engineer",
+    link: "https://www.linkedin.com/in/svenmalvik/",
     bio: "Three decades shipping software across cloud and native stacks, now focused on helping teams adopt generative AI across European enterprises.",
     image: SvenMalvikImage,
     highlights: [
-      "Creator of the macOS AI meeting companion used as the workshop case study",
+      'Creator of the macOS AI meeting companion used as the workshop case study',
       "Former Microsoft Azure MVP and author of “Mastering Azure API Management”",
       "Public speaker at Microsoft Build, NDC, JavaZone, and more",
       "Leads the Core AI team at Vipps MobilePay with a mandate to ship reliable AI features",
@@ -384,7 +386,20 @@ const Workshop = () => {
                     </div>
                   )}
                   <div>
-                    <h3 className="text-xl font-semibold">{facilitator.name}</h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="text-xl font-semibold">{facilitator.name}</h3>
+                      {facilitator.link && (
+                        <a
+                          href={facilitator.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center justify-center rounded-full border border-border/80 p-1 text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+                          aria-label={`Open ${facilitator.name}'s profile in a new tab`}
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      )}
+                    </div>
                     <p className="text-sm font-medium text-primary">{facilitator.role}</p>
                   </div>
                 </div>

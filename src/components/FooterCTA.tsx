@@ -48,14 +48,12 @@ const FooterCTA = () => {
                   </div>
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                  <a
-                    href="https://tally.so/r/3xkjvE"
-                    target="_blank"
-                    rel="noreferrer"
+                  <Link
+                    to="/workshop"
                     className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-lg font-semibold text-primary shadow-lg shadow-accent/40 transition hover:bg-accent/90"
                   >
-                    Start the Conversation
-                  </a>
+                    Explore the Workshop
+                  </Link>
                   <p className="text-sm md:text-base text-primary-foreground/70">
                     Prefer a discovery call? I&apos;ll help scope a pilot tailored to your teams.
                   </p>
