@@ -2,12 +2,12 @@ import { CheckCircle2 } from "lucide-react";
 
 const technicalHighlights = [
   {
-    title: "Native Swift + AppKit",
-    description: "Native macOS performance, not a web wrapper",
+    title: "Built for macOS",
+    description: "Swift + AppKit foundations deliver fast, secure performance that feels native on every Mac.",
   },
   {
-    title: "ScreenCaptureKit Integration",
-    description: "System-level audio capture for any application",
+    title: "Listens to Every Meeting",
+    description: "ScreenCaptureKit nodes hear Zoom, Teams, in-person rooms, and hybrid setups without extra hardware.",
   },
   {
     title: "Flexible AI Pipeline",
@@ -37,13 +37,13 @@ const TechnicalSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Engineered for Developers,<br />
+              Engineered for Every Meeting,<br />
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Ready to Teach Generative AI
+                Ready to Capture in Any Situation
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              This smart AI meeting companion exposes the practical patterns—capture pipelines, agent orchestration, and evaluation loops—so developers can practice shipping generative AI with confidence.
+              Vissper keeps up in boardrooms, coffee chats, and hybrid stand-ups—capturing audio, screenshots, and context so teams stay aligned no matter how they meet.
             </p>
           </div>
 

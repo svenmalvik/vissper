@@ -68,7 +68,7 @@ const RoadmapSection = () => {
                   </ul>
 
                   <a
-                    href="mailto:sven@malvik.de?subject=AI%20Meeting%20Companion%20Partnership"
+                    href="https://tally.so/r/3xkjvE"
                     className="mt-auto inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90"
                   >
                     Reach out if interested
