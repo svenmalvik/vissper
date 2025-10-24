@@ -59,7 +59,7 @@ someone please send that screenshot to qa later`}
                 </ul>
                 
                 <h3 className="text-xl font-bold text-foreground mb-4">Full Transcription</h3>
-                <p className="text-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
                   The new feature should ship by Friday. We could use Redis for caching.
                 </p>
                 
@@ -67,7 +67,7 @@ someone please send that screenshot to qa later`}
                   📸 Screenshot-2025-10-07_14-32-15.png
                 </div>
                 
-                <p className="text-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   John, do you think that's a good approach?
                 </p>
               </div>
