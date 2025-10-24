@@ -17,25 +17,25 @@ import SvenMalvikImage from "@/assets/svenmalvik.png";
 
 const modules = [
   {
-    title: "Session 1 — Master AI Architecture, Agents, Workflows & Refactoring",
+    title: "Session 1 — Design AI Agents That Think & Act Reliably",
     summary:
-      "Set up the full meeting companion pipeline end-to-end so audio reliably lands as structured transcripts you can build on.",
+      "Learn agent design patterns that let your AI make decisions, take actions, and adapt—not just generate text. These patterns are the foundation for every AI product that goes beyond simple prompts.",
     bullets: [
-      "Clone the starter repo, configure credentials, and map the architecture your team will ship with.",
-      "Apply agent vs workflow patterns so your meeting companion reacts predictably for your users.",
-      "Wire up the LLM connections and environment management your meeting companion relies on.",
-      "Refactor your codebase on the spot with vibe-coding and specification-driven development so it stays adaptable.",
+      "Understand agent vs workflow patterns: when to use each and why it matters for your product's behavior.",
+      "Build a working agent that breaks down meeting tasks, calls tools, and iterates toward results.",
+      "Design feedback loops that let your agent learn from mistakes—critical for production reliability.",
+      "Apply these patterns to your own problems: the patterns stay with you long after the workshop ends.",
     ],
   },
   {
-    title: "Session 2 — Deliver Meeting Intelligence & Plan Future AI Upgrades",
+    title: "Session 2 — Ship Agents That Users Trust: Evaluation & Safety",
     summary:
-      "Layer automation, guardrails, and deployment steps so your first AI companion is ready for your users.",
+      "Once your agent works, you need to measure it works reliably and safely. Learn the evaluation and guardrail patterns that separate proof-of-concept from production-ready AI.",
     bullets: [
-      "Master the core AI patterns from the workshop so you can reuse them safely on your own features.",
-      "Build agentic tools into your meeting companion so it gets smarter with every release.",
-      "Design prompts, guardrails, and fast evaluation loops that keep meeting notes grounded in the transcript.",
-      "Explore additional AI concepts you can layer in after the cohort to keep shipping improvements.",
+      "Build evaluation harnesses so you measure agent quality automatically—not by clicking around.",
+      "Design guardrails that keep your agent on track: prevent hallucinations, enforce constraints, catch edge cases.",
+      "Iterate fast with safety in mind: how to ship confident updates without fear of breaking production.",
+      "Think long-term: set up monitoring and feedback loops that make your agent smarter with every real-world use.",
     ],
   },
 ];
