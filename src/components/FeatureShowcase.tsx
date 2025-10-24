@@ -16,7 +16,7 @@ const features = [
   {
     icon: FileText,
     title: "Smart Copyediting",
-    description: "GPT-4 cleans up transcripts, removes filler words, embeds screenshots contextually, and generates concise summaries.",
+    description: "An LLM cleans up transcripts, removes filler words, embeds screenshots contextually, and generates concise summaries.",
     gradient: "from-success/20 to-primary/20",
   },
   {

@@ -11,7 +11,7 @@ const technicalHighlights = [
   },
   {
     title: "Flexible AI Pipeline",
-    description: "Plug in enterprise-approved ASR and LLM providers like Whisper, GPT-4, Claude, or your own models",
+    description: "Plug in enterprise-approved ASR and LLM providers like Whisper, GPT-5, Claude, or your own models",
   },
   {
     title: "Intelligent Screenshot Detection",
