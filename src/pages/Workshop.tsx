@@ -74,7 +74,7 @@ const facilitators = [
       "Former Microsoft Azure MVP and author of “Mastering Azure API Management”",
       "Public speaker at Microsoft Build, NDC, JavaZone, and more",
       "Leads the Core AI team at Vipps MobilePay with a mandate to ship reliable AI features",
-      "30 years of hands-on software engineering across native, cloud, and AI platforms",
+      "25 years of hands-on software engineering across native, cloud, and AI platforms",
     ],
   },
   {
