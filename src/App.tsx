@@ -12,9 +12,10 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
-// Use /vissper basename only for GitHub Pages subdirectory deployment
-// Custom domain (vissper.com) serves from root, so no basename needed
-const basename = window.location.hostname === 'vissper.com' ? '/' : '/vissper';
+// Detect GitHub Pages subdirectory deploys (e.g., /vissper) and set basename dynamically.
+// Custom domains and local development serve from the root path.
+const isSubdirectoryDeploy = window.location.pathname.startsWith("/vissper");
+const basename = isSubdirectoryDeploy ? "/vissper" : "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
