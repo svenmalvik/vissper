@@ -4,10 +4,23 @@
     <meta charset="utf-8">
     <title>Smart AI Meeting Companion</title>
     <script>
-      // GitHub Pages SPA redirect
+      // Handle SPA routing for both custom domains and GitHub Pages
+      // Store the requested path for the React app to restore via history API
       sessionStorage.redirect = location.href;
+
+      // Determine the correct base path based on domain
+      var basePath = '/';
+
+      // If on GitHub Pages subdirectory (svenmalvik.github.io/vissper)
+      if (location.hostname.includes('github.io') && location.pathname.startsWith('/vissper')) {
+        basePath = '/vissper/';
+      }
+      // If on custom domain or localhost, base is always /
+
+      // Redirect to index.html with the original path preserved in sessionStorage
+      var redirectUrl = basePath + '?redirect=' + encodeURIComponent(location.pathname + location.search + location.hash);
+      location.replace(redirectUrl);
     </script>
-    <meta http-equiv="refresh" content="0;URL='/vissper/'">
   </head>
   <body>
   </body>
