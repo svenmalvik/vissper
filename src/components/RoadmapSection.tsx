@@ -1,31 +1,18 @@
-import { Briefcase, Building2, CheckCircle2 } from "lucide-react";
+import { Building2, CheckCircle2 } from "lucide-react";
 
 const plans = [
   {
-    name: "Strategic Pilot",
-    price: "Tailored engagement",
-    description: "Co-design an applied generative AI pilot with your core developers and critical stakeholders.",
-    icon: Briefcase,
-    features: [
-      "Kickoff workshops to map current meeting workflows and learning goals",
-      "Hands-on build sprints pairing with your engineers",
-      "Shared roadmap planning for new AI capabilities",
-      "Guided enablement sessions so practices stick",
-    ],
-    badge: "Great for innovation teams",
-  },
-  {
-    name: "Enterprise Partnership",
-    price: "Annual collaboration",
-    description: "Scale your smart AI meeting companion learnings across teams with guided enablement, governance, and integrations.",
+    name: "Integration Pilot",
+    price: "Invite-only beta",
+    description: "Ideal for companies or teams evaluating how Vissper fits into their meeting workflows or product roadmap.",
     icon: Building2,
     features: [
-      "Smart AI meeting companion patterns tailored to your roadmap",
-      "Ongoing office hours and async code reviews",
-      "Documentation and playbooks your teams can extend",
-      "Quarterly learning reviews to expand capabilities",
+      "Hands-on evaluation to trial your data and meeting flows",
+      "Integration support with your current collaboration tools",
+      "Security and compliance review with your stakeholders",
+      "Joint roadmap session to plan a wider rollout if it fits",
     ],
-    badge: "Most popular",
+    badge: "For product & engineering leads",
   },
 ];
 
@@ -38,11 +25,11 @@ const RoadmapSection = () => {
             Integration & Partnership
           </h2>
           <p className="text-xl text-muted-foreground">
-            Every engagement is bespoke—choose the partnership tier that fits your enterprise, then customize it with us.
+            Exploring Vissper for your team? Start with an integration pilot built around your workflows and security needs.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto">
           {plans.map((plan, index) => {
             const Icon = plan.icon;
             return (
@@ -84,7 +71,7 @@ const RoadmapSection = () => {
                     href="mailto:sven@malvik.de?subject=AI%20Meeting%20Companion%20Partnership"
                     className="mt-auto inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90"
                   >
-                    Talk to Sales
+                    Reach out if interested
                   </a>
                 </div>
               </div>
