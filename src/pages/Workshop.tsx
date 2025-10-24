@@ -17,7 +17,7 @@ import SvenMalvikImage from "@/assets/svenmalvik.png";
 
 const modules = [
   {
-    title: "Session 1 — Master AI Architecture, Agent Workflows & Refactoring",
+    title: "Session 1 — Master AI Architecture, Agents, Workflows & Refactoring",
     summary:
       "Set up the full meeting companion pipeline end-to-end so audio reliably lands as structured transcripts you can build on.",
     bullets: [
