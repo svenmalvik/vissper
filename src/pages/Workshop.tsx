@@ -44,7 +44,7 @@ const bonuses = [
   {
     title: "Workshop Starter Repo",
     description:
-      "The same meeting companion codebase we configure together, including the transcription pipeline and agent workflow scaffolding.",
+      "The same meeting companion codebase configured during the sessions, including the transcription pipeline and agent workflow scaffolding.",
   },
   {
     title: "Prompt & Workflow Templates",
@@ -431,7 +431,7 @@ const Workshop = () => {
               Ready to Launch Your Smart AI Meeting Companion?
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-              Lock in your workshop dates, bring your toughest meeting workflows, and we will rebuild the smart AI meeting companion together.
+              Lock in your workshop dates, bring your toughest meeting workflows, and use guided build sessions to rebuild the smart AI meeting companion together.
               You will leave with code, prompts, and a repeatable playbook for every future AI-powered tool.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

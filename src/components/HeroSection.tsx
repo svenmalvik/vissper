@@ -24,7 +24,7 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h2 className="text-6xl md:text-8xl font-black text-foreground mb-6 leading-tight tracking-tight">
-            Meet Vissper, Your Smart AI Meeting Companion
+            Meet Vissper, the Smart AI Meeting Companion
           </h2>
 
           {/* Subheadline */}

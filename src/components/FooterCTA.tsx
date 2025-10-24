@@ -22,28 +22,30 @@ const FooterCTA = () => {
             <div className="glass-dark border-2 border-white/30 rounded-2xl p-10 max-w-4xl mx-auto shadow-glow">
               <div className="space-y-8">
                 <p className="text-3xl md:text-4xl text-primary-foreground font-bold">
-                  Partnering with engineering teams to master applied generative AI builds.
+                  Workshops and training so your teams adopt AI by learning while they build.
                 </p>
                 <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">
-                  From architecture deep dives to evaluation playbooks, we co-build the companion alongside your developers so the skills stick long after the workshop.
+                  Dive into the workshop agenda to see how the training covers capture pipelines, evaluation loops, and responsible rollout patterns your teams can keep shipping with.
                 </p>
-                <div className="grid gap-4 md:grid-cols-3 text-left text-primary-foreground/80">
+                <p className="text-sm text-primary-foreground/80">
+                  <Link
+                    to="/workshop"
+                    className="underline decoration-primary-foreground/40 hover:decoration-primary-foreground"
+                  >
+                    See the workshop page for the full curriculum and upcoming sessions.
+                  </Link>
+                </p>
+                <div className="grid gap-4 md:grid-cols-2 text-left text-primary-foreground/80">
                   <div className="bg-white/10 rounded-xl p-5 border border-white/10">
-                    <p className="text-lg font-semibold text-primary-foreground">Integration Workshops</p>
+                    <p className="text-lg font-semibold text-primary-foreground">Public Cohorts</p>
                     <p className="text-sm mt-2">
-                      Map current workflows and design the learning plan your developers can apply immediately.
+                      Join live build sessions to experience the end-to-end companion workflow with peers.
                     </p>
                   </div>
                   <div className="bg-white/10 rounded-xl p-5 border border-white/10">
-                    <p className="text-lg font-semibold text-primary-foreground">Secure Deployments</p>
+                    <p className="text-lg font-semibold text-primary-foreground">Private Team Training</p>
                     <p className="text-sm mt-2">
-                      Align with your technical stack, provider policies, and governance expectations from day one.
-                    </p>
-                  </div>
-                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
-                    <p className="text-lg font-semibold text-primary-foreground">Custom Integrations</p>
-                    <p className="text-sm mt-2">
-                      Embed the companion alongside internal tools, APIs, and proprietary knowledge bases while explaining the generative AI trade-offs.
+                      Bring the workshop on-site or remote and tailor the curriculum to your stack and policies.
                     </p>
                   </div>
                 </div>
