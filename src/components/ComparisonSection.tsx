@@ -21,10 +21,11 @@ const ComparisonSection = () => {
             </div>
             <div className="glass rounded-2xl p-8 border-2 border-destructive/20 hover:border-destructive/30 transition-colors">
               <pre className="text-sm text-muted-foreground font-mono leading-relaxed overflow-x-auto">
-{`um so yeah the new feature uh we should
-probably ship by friday screenshot taken here
+{`um so yeah the new caching thing uh we should
+ship by friday right? screenshot here somewhere
 maybe we could use redis for caching???
-john do you think thats good`}
+john can you check the sizing or something?
+someone please send that screenshot to qa later`}
               </pre>
             </div>
           </div>
@@ -43,6 +44,19 @@ john do you think thats good`}
                   Team discussed shipping the new caching feature by Friday using Redis. 
                   John will evaluate feasibility.
                 </p>
+
+                <h3 className="text-xl font-bold text-foreground mb-4">Main Points</h3>
+                <ul className="mb-6 space-y-2 text-muted-foreground">
+                  <li>- Target launch date: Friday for the caching feature.</li>
+                  <li>- Redis proposed as the preferred cache engine.</li>
+                  <li>- Screenshot captured to show the UI flow under review.</li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-foreground mb-4">Action Items</h3>
+                <ul className="mb-6 space-y-2 text-muted-foreground">
+                  <li>- John to validate Redis sizing and confirm readiness.</li>
+                  <li>- Product to share the referenced screenshot with QA.</li>
+                </ul>
                 
                 <h3 className="text-xl font-bold text-foreground mb-4">Full Transcription</h3>
                 <p className="text-foreground mb-4 leading-relaxed">
