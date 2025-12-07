@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Successful - Vissper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .icon-container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        .checkmark {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #667eea;
+            animation: checkmarkPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+            transform: scale(0);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #2d3748;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .info-box {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #2d3748;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-item::before {
+            content: "✓";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            margin-right: 12px;
+            flex-shrink: 0;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .next-steps {
+            background: #fff;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .next-steps h3 {
+            font-size: 16px;
+            color: #2d3748;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .step {
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 8px;
+            text-align: left;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .step::before {
+            content: counter(step);
+            counter-increment: step;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .steps-container {
+            counter-reset: step;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #718096;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes checkmarkPop {
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(102, 126, 234, 0.3);
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .processing {
+            display: inline-flex;
+            align-items: center;
+            color: #667eea;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <div class="checkmark">✓</div>
+        </div>
+        
+        <h1>Subscription Successful!</h1>
+        <p class="subtitle">
+            Welcome to Vissper Pro! Your subscription is now active.
+        </p>
+
+        <div class="info-box">
+            <div class="info-item">Full access to all transcription features</div>
+            <div class="info-item">Real-time AI summaries and action items</div>
+            <div class="info-item">Unlimited meeting recordings</div>
+            <div class="info-item">Priority support</div>
+        </div>
+
+        <div class="next-steps">
+            <h3>Next Steps</h3>
+            <div class="steps-container">
+                <div class="step">Return to the Vissper desktop app</div>
+                <div class="step">Restart the app if needed</div>
+                <div class="step">Start recording your first meeting!</div>
+            </div>
+        </div>
+
+        <div class="processing" id="processing">
+            <div class="spinner"></div>
+            <span>Processing your subscription...</span>
+        </div>
+
+        <div class="footer">
+            Need help? <a href="mailto:support@vissper.com">Contact Support</a> •
+            <a href="https://vissper.com/docs">View Documentation</a>
+        </div>
+    </div>
+
+    <script>
+        // Hide processing spinner after 3 seconds
+        setTimeout(() => {
+            const processing = document.getElementById('processing');
+            if (processing) {
+                processing.style.display = 'none';
+            }
+        }, 3000);
+
+        // Optional: Check subscription status via API
+        // This could poll an endpoint to verify the subscription is active
+    </script>
+</body>
+</html>
+
