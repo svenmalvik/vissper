@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Download } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -32,12 +33,22 @@ const HeroSection = () => {
             Capture, transcribe, and summarize meetings automatically so teams stay aligned, informed, and ready to ship what matters.
           </p>
 
-          {/* CTA Button */}
-          <div className="flex justify-center">
-            <a href="#comparison">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link to="/download">
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow hover:shadow-xl transition-all hover:scale-105 group"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download for macOS
+              </Button>
+            </Link>
+            <a href="#comparison">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-10 py-7 rounded-2xl border-primary/40 hover:bg-primary/10 transition-all hover:scale-105 group"
               >
                 Explore Features
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

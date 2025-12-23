@@ -23,7 +23,7 @@ const DownloadPage = () => {
           <div className="mx-auto max-w-3xl text-center space-y-8 animate-fade-in">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary backdrop-blur">
               <Download className="h-4 w-4" />
-              Download VissperCloud
+              Download Vissper Cloud
             </span>
             <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">
               Get Vissper Cloud for macOS
