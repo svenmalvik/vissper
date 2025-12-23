@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Download, Apple, Shield, HardDrive } from "lucide-react";
+import { Download, Apple, Shield, HardDrive, Building2 } from "lucide-react";
 
 const DownloadPage = () => {
   return (
@@ -40,6 +40,12 @@ const DownloadPage = () => {
                 </a>
               </Button>
               <span className="text-sm text-muted-foreground">Version 0.3.2 • macOS 12.0+</span>
+              <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-6 text-base border-border/60">
+                <a href="https://www.linkedin.com/in/svenmalvik/" target="_blank" rel="noopener noreferrer">
+                  <Building2 className="mr-2 h-5 w-5" />
+                  Enterprise? Contact Sven Malvik
+                </a>
+              </Button>
             </div>
 
             <div className="pt-8 grid gap-6 sm:grid-cols-2 max-w-xl mx-auto text-left">
