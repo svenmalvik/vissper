@@ -34,7 +34,7 @@ const DownloadPage = () => {
 
             <div className="flex flex-col items-center gap-6">
               <Button asChild size="lg" className="rounded-full px-10 py-7 text-lg shadow-lg shadow-primary/30">
-                <a href="/VissperCloud-0.3.2.dmg" download>
+                <a href="/Vissper Cloud-0.3.2.dmg" download>
                   <Apple className="mr-2 h-5 w-5" />
                   Download for macOS
                 </a>
