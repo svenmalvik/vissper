@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
 import Workshop from "./pages/Workshop";
 import ThankYou from "./pages/ThankYou";
+import Download from "./pages/Download";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/thankyou" element={<ThankYou />} />
+          <Route path="/download" element={<Download />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
