@@ -16,6 +16,9 @@ const Index = () => {
           <Link to="/workshop" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
             Join the Smart AI Meeting Companion <span className="text-primary">Workshop</span>
           </Link>
+          <Link to="/download" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
+            <span className="text-primary">Download</span>
+          </Link>
         </div>
       </div>
       <HeroSection />
