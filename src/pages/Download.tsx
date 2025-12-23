@@ -26,7 +26,7 @@ const DownloadPage = () => {
               Download VissperCloud
             </span>
             <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">
-              Get VissperCloud for macOS
+              Get Vissper Cloud for macOS
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Download the latest version of VissperCloud and transform your meetings with AI-powered insights.
