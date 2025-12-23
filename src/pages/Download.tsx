@@ -29,7 +29,7 @@ const DownloadPage = () => {
               Get Vissper Cloud for macOS
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Download the latest version of VissperCloud and transform your meetings with AI-powered insights.
+              Download the latest version of Vissper Cloud and transform your meetings with AI-powered insights.
             </p>
 
             <div className="flex flex-col items-center gap-6">
