@@ -17,7 +17,7 @@ const MalfiCTASection = () => {
             Ready to Transform Your Finances?
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            MalFi is coming soon to the App Store. Built with privacy and security at its core.
+            Malfi is coming soon to the App Store. Built with privacy and security at its core.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

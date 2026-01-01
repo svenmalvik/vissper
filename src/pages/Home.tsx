@@ -73,7 +73,7 @@ const Home = () => {
             {/* Malfi Card */}
             <Card className="hover:shadow-soft transition-all hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
               <CardHeader>
-                <CardTitle className="text-3xl">MalFi</CardTitle>
+                <CardTitle className="text-3xl">Malfi</CardTitle>
                 <CardDescription className="text-base">
                   Personal finance iOS app with mortgage planning, portfolio tracking, and currency exchange
                 </CardDescription>

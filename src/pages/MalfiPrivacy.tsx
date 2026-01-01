@@ -4,7 +4,7 @@ const MalfiPrivacy = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-3xl space-y-10">
           <section className="space-y-4">
-            <h1 className="text-4xl font-bold">MalFi Privacy Policy</h1>
+            <h1 className="text-4xl font-bold">Malfi Privacy Policy</h1>
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">Last Updated: January 1, 2026</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Your financial data is stored locally on your device with encryption. If you enable iCloud sync, your data is stored in your private iCloud account—we do not operate servers.
@@ -12,7 +12,7 @@ const MalfiPrivacy = () => {
           </section>
 
           <section className="rounded-3xl border border-border/60 bg-background/60 p-8 shadow-card backdrop-blur">
-            <h2 className="text-2xl font-semibold">What MalFi Collects</h2>
+            <h2 className="text-2xl font-semibold">What Malfi Collects</h2>
             <ul className="mt-6 space-y-3 text-muted-foreground">
               <li>
                 <span className="font-medium text-foreground">Portfolio data:</span> stocks, cryptocurrencies, and account balances
@@ -27,7 +27,7 @@ const MalfiPrivacy = () => {
           </section>
 
           <section className="rounded-3xl border border-border/60 bg-background/60 p-8 shadow-card backdrop-blur">
-            <h2 className="text-2xl font-semibold">What MalFi Does NOT Collect</h2>
+            <h2 className="text-2xl font-semibold">What Malfi Does NOT Collect</h2>
             <ul className="mt-4 space-y-3 text-muted-foreground">
               <li>Names, emails, or personal identifiers</li>
               <li>Bank or brokerage account access</li>

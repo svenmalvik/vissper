@@ -7,9 +7,9 @@ const MalfiSupport = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-3xl space-y-10">
           <section className="space-y-4">
-            <h1 className="text-4xl font-bold">MalFi Support</h1>
+            <h1 className="text-4xl font-bold">Malfi Support</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Need help with MalFi? Find troubleshooting tips below or reach out directly.
+              Need help with Malfi? Find troubleshooting tips below or reach out directly.
             </p>
           </section>
 
@@ -37,7 +37,7 @@ const MalfiSupport = () => {
               <div>
                 <h3 className="text-lg font-medium text-foreground mb-2">App not loading data?</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Check your internet connection and try again. MalFi needs an active connection to fetch market data from Coinbase and Stooq.
+                  Check your internet connection and try again. Malfi needs an active connection to fetch market data from Coinbase and Stooq.
                 </p>
               </div>
               <div>

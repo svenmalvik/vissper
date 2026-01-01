@@ -4,14 +4,14 @@ const MalfiTerms = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-3xl space-y-10">
           <section className="space-y-4">
-            <h1 className="text-4xl font-bold">MalFi Terms of Service</h1>
+            <h1 className="text-4xl font-bold">Malfi Terms of Service</h1>
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">Last Updated: January 1, 2026</p>
           </section>
 
           <section className="rounded-3xl border border-border/60 bg-background/60 p-8 shadow-card backdrop-blur">
             <h2 className="text-2xl font-semibold">1. Service Description</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              MalFi functions as a personal finance tool enabling users to organize mortgages, bank accounts, stocks, and cryptocurrency holdings with visualization capabilities.
+              Malfi functions as a personal finance tool enabling users to organize mortgages, bank accounts, stocks, and cryptocurrency holdings with visualization capabilities.
             </p>
           </section>
 
