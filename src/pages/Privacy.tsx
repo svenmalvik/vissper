@@ -1,20 +1,10 @@
-import { Link } from "react-router-dom";
-
 const Privacy = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b border-border/60 bg-background/90 backdrop-blur">
-        <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          <h1 className="text-lg font-semibold tracking-tight">Vissper Privacy Policy</h1>
-          <Link to="/" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-            Return Home
-          </Link>
-        </div>
-      </header>
-
       <main className="container mx-auto px-4 py-16">
         <div className="mx-auto max-w-3xl space-y-10">
           <section className="space-y-4">
+            <h1 className="text-4xl font-bold">Privacy Policy</h1>
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">Effective October 2025</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Vissper helps teams learn how to architect and ship smart meeting companions. This privacy notice explains what data is collected, how it is used,

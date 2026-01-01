@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,24 +10,19 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-100">
-      <main className="flex flex-1 items-center justify-center px-4">
-        <div className="text-center">
-          <h1 className="mb-4 text-4xl font-bold">404</h1>
-          <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-          <Link to="/" className="text-blue-500 underline hover:text-blue-700">
-            Return to Home
-          </Link>
+    <div className="min-h-screen bg-background text-foreground">
+      <main className="flex flex-1 items-center justify-center px-4 py-32">
+        <div className="text-center max-w-2xl">
+          <h1 className="mb-4 text-6xl font-black">404</h1>
+          <p className="mb-8 text-2xl text-muted-foreground">Oops! Page not found</p>
+          <p className="mb-12 text-lg text-muted-foreground">
+            The page you're looking for doesn't exist or has been moved.
+          </p>
+          <Button asChild size="lg" className="rounded-full">
+            <Link to="/">Return to Home</Link>
+          </Button>
         </div>
       </main>
-      <footer className="border-t border-gray-200 bg-white/80">
-        <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-3 px-4 py-4 text-sm text-gray-600 md:flex-row">
-          <p className="text-center md:text-left">© {new Date().getFullYear()} Vissper.</p>
-          <Link to="/privacy" className="underline decoration-gray-400 hover:text-blue-600">
-            Privacy
-          </Link>
-        </div>
-      </footer>
     </div>
   );
 };

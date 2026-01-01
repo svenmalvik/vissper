@@ -5,14 +5,6 @@ import { Sparkles } from "lucide-react";
 const ThankYou = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="bg-background/90 border-b border-border/60 backdrop-blur">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between text-sm">
-          <Link to="/" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
-            Vissper — Return to Product Home
-          </Link>
-        </div>
-      </div>
-
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/10">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-primary/30 blur-3xl"></div>
@@ -33,7 +25,7 @@ const ThankYou = () => {
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-center gap-3">
               <Button asChild size="lg" className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30">
-                <Link to="/">Return to Vissper</Link>
+                <Link to="/">Return to Home</Link>
               </Button>
             </div>
           </div>

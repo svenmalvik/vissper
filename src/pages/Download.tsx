@@ -7,8 +7,8 @@ const DownloadPage = () => {
     <div className="min-h-screen bg-background text-foreground">
       <div className="bg-background/90 border-b border-border/60 backdrop-blur">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between text-sm">
-          <Link to="/" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
-            Vissper — Return to Product Home
+          <Link to="/vissper" className="font-semibold tracking-tight text-foreground hover:text-primary transition-colors">
+            Vissper — Return to Vissper
           </Link>
         </div>
       </div>
@@ -65,7 +65,7 @@ const DownloadPage = () => {
 
             <div className="pt-4">
               <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-6 text-lg border-primary/40 text-primary">
-                <Link to="/">Learn More About Vissper</Link>
+                <Link to="/vissper">Learn More About Vissper</Link>
               </Button>
             </div>
           </div>

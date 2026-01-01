@@ -20,7 +20,7 @@ const FooterCTA = () => {
           </p>
 
           <Link
-            to="/download"
+            to="/vissper/download"
             className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/90 transition-all hover:scale-105 shadow-lg"
           >
             <Download className="h-5 w-5" />

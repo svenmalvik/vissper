@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Download } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Apple, Sparkles } from "lucide-react";
 
-const HeroSection = () => {
+const MalfiHeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Modern mesh gradient background */}
       <div className="absolute inset-0 gradient-mesh"></div>
-      
+
       {/* Animated orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/30 rounded-full blur-3xl animate-pulse"></div>
@@ -20,40 +19,29 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 border border-primary/20 shadow-glow">
             <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Built for Enterprises, Tuned for Teams</span>
+            <span className="text-sm font-medium text-foreground">Privacy-First Personal Finance</span>
           </div>
 
           {/* Main Headline */}
           <h2 className="text-6xl md:text-8xl font-black text-foreground mb-6 leading-tight tracking-tight">
-            Meet Vissper, the Smart AI Meeting Companion
+            Take Control of Your Finances
           </h2>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Capture, transcribe, and summarize meetings automatically so teams stay aligned, informed, and ready to ship what matters.
+            Smart budgeting, portfolio tracking, and mortgage planning for iOS. Know where every dollar goes.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/vissper/download">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow hover:shadow-xl transition-all hover:scale-105 group"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download for macOS
-              </Button>
-            </Link>
-            <a href="#comparison">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-10 py-7 rounded-2xl border-primary/40 hover:bg-primary/10 transition-all hover:scale-105 group"
-              >
-                Explore Features
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </a>
+            <Button
+              size="lg"
+              disabled
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-2xl shadow-glow"
+            >
+              <Apple className="mr-2 h-5 w-5" />
+              Download on App Store (Coming Soon)
+            </Button>
           </div>
 
           {/* Visual indicator */}
@@ -69,4 +57,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default MalfiHeroSection;
