@@ -22,7 +22,7 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-6xl md:text-8xl font-black mb-6 text-foreground">Sven Malvik</h1>
             <p className="text-2xl md:text-3xl text-muted-foreground mb-6">
-              Software Architect & AI Engineer
+              Cloud Platform Architect & AI Engineer
             </p>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
               Building intelligent systems and exploring the frontiers of AI. Passionate about creating tools that empower individuals and teams.
