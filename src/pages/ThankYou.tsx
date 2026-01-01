@@ -35,9 +35,6 @@ const ThankYou = () => {
               <Button asChild size="lg" className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30">
                 <Link to="/">Return to Vissper</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full px-8 py-6 text-lg border-primary/40 text-primary">
-                <Link to="/workshop">Explore the Workshop</Link>
-              </Button>
             </div>
           </div>
         </div>

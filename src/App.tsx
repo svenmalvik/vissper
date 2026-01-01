@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
-import Workshop from "./pages/Workshop";
 import ThankYou from "./pages/ThankYou";
 import Download from "./pages/Download";
 import ScrollToTop from "./components/ScrollToTop";
@@ -27,7 +26,6 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/workshop" element={<Workshop />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/thankyou" element={<ThankYou />} />
           <Route path="/download" element={<Download />} />

@@ -6,15 +6,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Vissper is an AI-powered meeting companion landing page built with Vite, React, TypeScript, shadcn-ui, and Tailwind CSS. Created using Lovable (lovable.dev), it follows a component-based architecture for marketing pages.
 
-**Live Site**: https://svenmalvik.github.io/vissper/
+**Live Site**: https://vissper.com
 
 ## Development Commands
 
-- `npm run dev` - Start development server on port 8080
-- `npm run build` - Build for production
-- `npm run build:dev` - Build with development mode
+- `npm run dev` - Start development server on port 8080 (IPv6 enabled)
+- `npm run build` - Production build (outputs to `dist/`)
+- `npm run build:dev` - Development mode build
 - `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build
+- `npm run preview` - Preview production build locally
 
 ## Architecture
 
@@ -27,7 +27,7 @@ Vissper is an AI-powered meeting companion landing page built with Vite, React, 
 - **Styling**: Tailwind CSS with custom configuration
 
 ### Project Structure
-- `src/pages/` - Page components (Index, Download, Workshop, Privacy, ThankYou, NotFound)
+- `src/pages/` - Page components (Index, Download, Privacy, ThankYou, NotFound)
 - `src/components/` - Section components for landing pages (HeroSection, FeatureShowcase, etc.)
 - `src/components/ui/` - shadcn-ui component library
 - `src/hooks/` - Custom React hooks
@@ -41,7 +41,7 @@ Use `@/` prefix for imports (configured in vite.config.ts and tsconfig):
 - `@/components`, `@/lib`, `@/hooks`, `@/components/ui`
 
 ### Routing
-Routes are defined in `src/App.tsx`. Custom routes must be added ABOVE the catch-all `*` route. The router dynamically detects GitHub Pages subdirectory deploys (`/vissper`) vs custom domain/local development and sets basename accordingly.
+Routes are defined in `src/App.tsx`. Custom routes must be added ABOVE the catch-all `*` route. The router dynamically detects GitHub Pages subdirectory deploys (`/vissper`) vs custom domain/local development and sets basename accordingly (src/App.tsx:16-19).
 
 ### Deployment
 Automatically deploys to GitHub Pages via GitHub Actions on push to `main`. The `dist` folder is deployed.
@@ -52,4 +52,7 @@ Automatically deploys to GitHub Pages via GitHub Actions on push to `main`. The 
 - Commit messages with `[skip lovable]` bypass Lovable sync
 
 ### shadcn-ui Configuration
-Configured via `components.json`: default style, slate base color, CSS variables enabled.
+Configured via `components.json`: default style, slate base color, CSS variables enabled. The component library includes 40+ pre-built UI components in `src/components/ui/`.
+
+### Custom Animations
+Tailwind config includes custom keyframes and animations (fade-in, fade-in-up, scale-in) used throughout landing page sections for smooth entrance effects.

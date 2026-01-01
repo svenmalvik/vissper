@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Download } from "lucide-react";
 
 const FooterCTA = () => {
   return (
@@ -8,64 +9,26 @@ const FooterCTA = () => {
         <div className="absolute top-20 left-20 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <h2 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Level Up Your Team&apos;s Generative AI Skills
+            Ready to Transform Your Meetings?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Hands-on cohorts and private build days that teach developers how to architect, ship, and iterate on smart AI meeting companions.
+          <p className="text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Download Vissper Cloud and start capturing insights from your meetings today. Free to get started.
           </p>
 
-          <div className="text-center mb-16">
-            <div className="glass-dark border-2 border-white/30 rounded-2xl p-10 max-w-4xl mx-auto shadow-glow">
-              <div className="space-y-8">
-                <p className="text-3xl md:text-4xl text-primary-foreground font-bold">
-                  Workshops and training so your teams adopt AI by learning while they build.
-                </p>
-                <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">
-                  Dive into the workshop agenda to see how the training covers capture pipelines, evaluation loops, and responsible rollout patterns your teams can keep shipping with.
-                </p>
-                <p className="text-sm text-primary-foreground/80">
-                  <Link
-                    to="/workshop"
-                    className="underline decoration-primary-foreground/40 hover:decoration-primary-foreground"
-                  >
-                    See the workshop page for the full curriculum and upcoming sessions.
-                  </Link>
-                </p>
-                <div className="grid gap-4 md:grid-cols-2 text-left text-primary-foreground/80">
-                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
-                    <p className="text-lg font-semibold text-primary-foreground">Public Cohorts</p>
-                    <p className="text-sm mt-2">
-                      Join live build sessions to experience the end-to-end companion workflow with peers.
-                    </p>
-                  </div>
-                  <div className="bg-white/10 rounded-xl p-5 border border-white/10">
-                    <p className="text-lg font-semibold text-primary-foreground">Private Team Training</p>
-                    <p className="text-sm mt-2">
-                      Bring the workshop on-site or remote and tailor the curriculum to your stack and policies.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                  <Link
-                    to="/workshop"
-                    className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-lg font-semibold text-primary shadow-lg shadow-accent/40 transition hover:bg-accent/90"
-                  >
-                    Explore the Workshop
-                  </Link>
-                  <p className="text-sm md:text-base text-primary-foreground/70">
-                    Prefer a discovery call? I&apos;ll help scope a pilot tailored to your teams.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Link
+            to="/download"
+            className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/90 transition-all hover:scale-105 shadow-lg"
+          >
+            <Download className="h-5 w-5" />
+            Download for Mac
+          </Link>
 
           {/* Footer info */}
-          <div className="border-t border-white/20 pt-10">
+          <div className="border-t border-white/20 pt-10 mt-16">
             <div className="flex flex-col items-center justify-between gap-4 text-sm text-primary-foreground/80 md:flex-row">
               <p className="text-center md:text-left">
                 Enterprise-grade meeting intelligence, crafted by{" "}
